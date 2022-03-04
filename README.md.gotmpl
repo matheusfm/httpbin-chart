@@ -1,0 +1,52 @@
+# httpbin-chart
+
+{{ template "chart.deprecationWarning" . }}
+
+{{ template "chart.badgesSection" . }}
+
+{{ template "chart.description" . }}
+
+## Installing the Chart
+
+To install the chart with the release name `httpbin`:
+
+```console
+$ helm repo add matheusfm https://matheusfm.dev/charts
+$ helm install httpbin matheusfm/{{ template "chart.name" . }}
+```
+
+These commands deploy [httpbin](https://httpbingo.org) on the Kubernetes cluster in the default configuration.
+The [Parameters](#parameters) section lists the parameters that can be configured during installation.
+
+> **Tip:** List all releases using `helm list`
+
+## Uninstalling the Chart
+
+To uninstall/delete the `httpbin` release:
+
+```console
+$ helm delete httpbin
+```
+
+The command removes all the Kubernetes components associated with the chart and deletes the release.
+
+## Parameters
+
+The following table lists the configurable parameters of the httpbin chart and their default values.
+
+{{ template "chart.valuesTable" . }}
+
+Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
+
+```console
+$ helm install httpbin \
+  --set service.port=8080 matheusfm/{{ template "chart.name" . }}
+```
+
+Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
+
+```console
+$ helm install httpbin -f values.yaml matheusfm/{{ template "chart.name" . }}
+```
+
+> **Tip**: You can use the default [values.yaml](values.yaml)
