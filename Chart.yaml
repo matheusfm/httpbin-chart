@@ -1,6 +1,6 @@
 apiVersion: v2
 name: httpbin
-description: Helm chart for install httpbingo.org on Kubernetes
+description: Helm chart to install httpbingo.org on Kubernetes
 type: application
 version: 0.1.1
 appVersion: "v2.3.0"
