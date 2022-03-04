@@ -1,6 +1,6 @@
 # httpbin-chart
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.3.0](https://img.shields.io/badge/AppVersion-v2.3.0-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.3.0](https://img.shields.io/badge/AppVersion-v2.3.0-informational?style=flat-square)
 
 Helm chart for install [httpbingo.org](https://httpbingo.org) on Kubernetes
 
@@ -16,7 +16,9 @@ $ helm install httpbin matheusfm/httpbin
 These commands deploy [httpbin](https://httpbingo.org) on the Kubernetes cluster in the default configuration.
 The [Parameters](#parameters) section lists the parameters that can be configured during installation.
 
-> **Tip:** List all releases using `helm list`
+> **Tips:**
+> - List all charts available in `matheusfm` repo using `helm search repo matheusfm`
+> - List all releases using `helm list`
 
 ## Uninstalling the Chart
 

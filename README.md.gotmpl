@@ -4,7 +4,7 @@
 
 {{ template "chart.badgesSection" . }}
 
-{{ template "chart.description" . }}
+Helm chart for install [httpbingo.org](https://httpbingo.org) on Kubernetes
 
 ## Installing the Chart
 
@@ -18,7 +18,9 @@ $ helm install httpbin matheusfm/{{ template "chart.name" . }}
 These commands deploy [httpbin](https://httpbingo.org) on the Kubernetes cluster in the default configuration.
 The [Parameters](#parameters) section lists the parameters that can be configured during installation.
 
-> **Tip:** List all releases using `helm list`
+> **Tips:**
+> - List all charts available in `matheusfm` repo using `helm search repo matheusfm`
+> - List all releases using `helm list`
 
 ## Uninstalling the Chart
 
